@@ -2,10 +2,11 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:first_app/model/password_item.dart';
-import 'package:first_app/service/secure_db_service.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
+//TODO
+//import 'package:sqflite_sqlcipher/sqflite.dart';
 
 class PasswordDatabase {
   // db constructor
@@ -23,7 +24,8 @@ class PasswordDatabase {
     String path = join(documentsDirectory.path, 'passwords.db');
     return await openDatabase(
       path,
-      version: 1,
+      //password: "heslo",
+      version: 4,
       onCreate: _onCreate,
     );
   }
@@ -36,12 +38,10 @@ class PasswordDatabase {
   }
 
   // get items from db
-  Future<List<PasswordItem>> getItems() async {
+  Future<List<PasswordItem>> getItems(secureService) async {
     Database db = await instance.database;
     var pwds = await db.query('passwords', orderBy: 'name');
     List<PasswordItem> newPwdList = [];
-
-    final secureService = SecureDbService();
 
     // db contains an items
     if (pwds.isNotEmpty) {

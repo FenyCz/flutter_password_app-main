@@ -1,13 +1,16 @@
 import 'package:first_app/db/password_db.dart';
 import 'package:first_app/model/password_item.dart';
 import 'package:first_app/pages/add_password_page.dart';
+import 'package:first_app/service/secure_db_service.dart';
 import 'package:first_app/widgets/home_page_item.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({Key? key, required this.title, required this.secureService})
+      : super(key: key);
 
   final String title;
+  final SecureDbService secureService;
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -21,7 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: FutureBuilder<List<PasswordItem>>(
-        future: PasswordDatabase.instance.getItems(),
+        future: PasswordDatabase.instance.getItems(widget.secureService),
         builder:
             (BuildContext context, AsyncSnapshot<List<PasswordItem>> snapshot) {
           if (!snapshot.hasData) {

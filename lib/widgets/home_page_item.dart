@@ -6,12 +6,13 @@ class ItemWidget extends StatelessWidget {
   final PasswordItem item;
 
   const ItemWidget({
+    super.key,
     required this.item,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 100,
       child: Card(
         color: Colors.white70,

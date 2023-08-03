@@ -33,7 +33,7 @@ class AddFormState extends State<AddForm> {
   String itemName = "";
   String itemUser = "";
   String itemPwd = "";
-  var uuid = Uuid();
+  var uuid = const Uuid();
   final _secureService = SecureDbService();
 
   @override
@@ -107,6 +107,7 @@ class AddFormState extends State<AddForm> {
                     await PasswordDatabase.instance.add(PasswordItem(
                         name: itemName, user: itemUser, pwd: generatedKey));
                     // get to main page
+                    if (!mounted) return;
                     Navigator.pop(context);
                   }
                 },

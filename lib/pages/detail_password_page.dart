@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class DetailPasswordPage extends StatefulWidget {
-  DetailPasswordPage({super.key, required this.item});
+  const DetailPasswordPage({super.key, required this.item});
 
   final PasswordItem item;
 
@@ -16,6 +16,7 @@ class _DetailPageState extends State<DetailPasswordPage> {
 
   Future<void> _copyToClipboard(String text) async {
     await Clipboard.setData(ClipboardData(text: text));
+    if (!mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
       content: Text('Zkopírováno'),
     ));
