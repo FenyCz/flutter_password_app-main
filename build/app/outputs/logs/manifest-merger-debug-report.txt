@@ -18,10 +18,12 @@ INJECTED from C:\Users\fanap\Desktop\dev\flutter_password_app-main\android\app\s
 INJECTED from C:\Users\fanap\Desktop\dev\flutter_password_app-main\android\app\src\main\AndroidManifest.xml:1:1-34:12
 MERGED from C:\Users\fanap\Desktop\dev\flutter_password_app-main\android\app\src\main\AndroidManifest.xml:1:1-34:12
 MERGED from [:sqflite] C:\Users\fanap\Desktop\dev\flutter_password_app-main\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:sqflite_sqlcipher] C:\Users\fanap\Desktop\dev\flutter_password_app-main\build\sqflite_sqlcipher\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:path_provider_android] C:\Users\fanap\Desktop\dev\flutter_password_app-main\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:flutter_secure_storage] C:\Users\fanap\Desktop\dev\flutter_password_app-main\build\flutter_secure_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\fanap\.gradle\caches\transforms-3\246793f755122fe14a5802655438cb75\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\fanap\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
+MERGED from [net.zetetic:android-database-sqlcipher:4.5.0] C:\Users\fanap\.gradle\caches\transforms-3\ce3042a5609dbc2fb53430d2a377524d\transformed\jetified-android-database-sqlcipher-4.5.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.security:security-crypto:1.1.0-alpha04] C:\Users\fanap\.gradle\caches\transforms-3\979ca55c19e48ae4f35d88a555f3ad16\transformed\jetified-security-crypto-1.1.0-alpha04\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\fanap\.gradle\caches\transforms-3\0e0e1a382b52c0572988a1c50e96d2f7\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\fanap\.gradle\caches\transforms-3\045d2e69ed718df502093495707de7d0\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -34,6 +36,7 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\fanap\.gradle\caches
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\fanap\.gradle\caches\transforms-3\4d571c0d2420042bbe5204d312a62bb2\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\fanap\.gradle\caches\transforms-3\ab7ce279708bbb9e6bfa95c7580f1bb9\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\fanap\.gradle\caches\transforms-3\9a15d0431946b4658756ca271d093b65\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\fanap\.gradle\caches\transforms-3\e0c03b924cc7419d74daf0a42c777625\transformed\sqlite-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\fanap\.gradle\caches\transforms-3\c6290d38a27dcf8d064fa9cefcb89071\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\fanap\.gradle\caches\transforms-3\57003bf956257e647aeaeb419a007e24\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\fanap\.gradle\caches\transforms-3\ed9734c73cdec898947618088fbe87b0\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
@@ -61,6 +64,8 @@ INJECTED from C:\Users\fanap\Desktop\dev\flutter_password_app-main\android\app\s
 INJECTED from C:\Users\fanap\Desktop\dev\flutter_password_app-main\android\app\src\main\AndroidManifest.xml
 MERGED from [:sqflite] C:\Users\fanap\Desktop\dev\flutter_password_app-main\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:sqflite] C:\Users\fanap\Desktop\dev\flutter_password_app-main\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite_sqlcipher] C:\Users\fanap\Desktop\dev\flutter_password_app-main\build\sqflite_sqlcipher\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite_sqlcipher] C:\Users\fanap\Desktop\dev\flutter_password_app-main\build\sqflite_sqlcipher\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] C:\Users\fanap\Desktop\dev\flutter_password_app-main\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:path_provider_android] C:\Users\fanap\Desktop\dev\flutter_password_app-main\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_secure_storage] C:\Users\fanap\Desktop\dev\flutter_password_app-main\build\flutter_secure_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-9:53
@@ -69,6 +74,8 @@ MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\fanap\.gradle\ca
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\fanap\.gradle\caches\transforms-3\246793f755122fe14a5802655438cb75\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\fanap\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\fanap\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [net.zetetic:android-database-sqlcipher:4.5.0] C:\Users\fanap\.gradle\caches\transforms-3\ce3042a5609dbc2fb53430d2a377524d\transformed\jetified-android-database-sqlcipher-4.5.0\AndroidManifest.xml:7:5-9:41
+MERGED from [net.zetetic:android-database-sqlcipher:4.5.0] C:\Users\fanap\.gradle\caches\transforms-3\ce3042a5609dbc2fb53430d2a377524d\transformed\jetified-android-database-sqlcipher-4.5.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.security:security-crypto:1.1.0-alpha04] C:\Users\fanap\.gradle\caches\transforms-3\979ca55c19e48ae4f35d88a555f3ad16\transformed\jetified-security-crypto-1.1.0-alpha04\AndroidManifest.xml:20:5-44
 MERGED from [androidx.security:security-crypto:1.1.0-alpha04] C:\Users\fanap\.gradle\caches\transforms-3\979ca55c19e48ae4f35d88a555f3ad16\transformed\jetified-security-crypto-1.1.0-alpha04\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\fanap\.gradle\caches\transforms-3\0e0e1a382b52c0572988a1c50e96d2f7\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -93,6 +100,8 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\fanap\.g
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\fanap\.gradle\caches\transforms-3\ab7ce279708bbb9e6bfa95c7580f1bb9\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\fanap\.gradle\caches\transforms-3\9a15d0431946b4658756ca271d093b65\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\fanap\.gradle\caches\transforms-3\9a15d0431946b4658756ca271d093b65\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\fanap\.gradle\caches\transforms-3\e0c03b924cc7419d74daf0a42c777625\transformed\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\fanap\.gradle\caches\transforms-3\e0c03b924cc7419d74daf0a42c777625\transformed\sqlite-2.0.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\fanap\.gradle\caches\transforms-3\c6290d38a27dcf8d064fa9cefcb89071\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\fanap\.gradle\caches\transforms-3\c6290d38a27dcf8d064fa9cefcb89071\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\fanap\.gradle\caches\transforms-3\57003bf956257e647aeaeb419a007e24\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44

@@ -8,11 +8,11 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 Future<void> main() async {
-  // await dotenv.load(fileName: '.env');
+  // init db
   await Hive.initFlutter();
   Hive.registerAdapter(ItemAdapter());
 
-  // TODO use only one secure storage
+  // encrypt db
   const secureStorage = FlutterSecureStorage();
   var keyExists = await secureStorage.read(key: 'hiveKey');
   if (keyExists == null) {
@@ -22,33 +22,39 @@ Future<void> main() async {
   final key = await secureStorage.read(key: 'hiveKey');
   final encryptionKey = base64Url.decode(key!);
 
+  // load data to memory for sync accessibility
   await Hive.openBox<Item>('itemBox',
       encryptionCipher: HiveAesCipher(encryptionKey));
 
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
+  runApp(const MyApp(secureStorage: secureStorage));
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key, required this.secureStorage}) : super(key: key);
+
+  final FlutterSecureStorage secureStorage;
 
   @override
   State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
-  // create service and pass through widgets
-  final secureService = SecureDbService();
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // create service and pass through widgets
+    final secureService = SecureDbService();
+
     return MaterialApp(
       title: 'Password App',
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: MyHomePage(title: 'Password App', secureService: secureService),
+      home: MyHomePage(
+          title: 'Password App',
+          secureService: secureService,
+          secureStorage: widget.secureStorage),
     );
   }
 }
