@@ -28,7 +28,6 @@ class _MyHomePageState extends State<MyHomePage> {
         children: getItems(widget.secureService).map((password) {
           return ItemWidget(
             item: Item(
-              id: password.id,
               name: password.name,
               user: password.user,
               pwd: password.pwd,

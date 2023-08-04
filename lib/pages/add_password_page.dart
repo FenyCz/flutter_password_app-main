@@ -91,10 +91,8 @@ class AddFormState extends State<AddForm> {
               child: ElevatedButton(
                 onPressed: () async {
                   // add item into db with key instead of password
-                  createItem(Item(
-                      id: 1, name: itemName, user: itemUser, pwd: itemPwd));
-                  // await PasswordDatabase.instance.add(PasswordItem(
-                  //     name: itemName, user: itemUser, pwd: generatedKey));
+                  createItem(
+                      Item(name: itemName, user: itemUser, pwd: itemPwd));
                   // get to main page
                   if (!mounted) return;
                   Navigator.pop(context);
