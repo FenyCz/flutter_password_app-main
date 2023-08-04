@@ -1,11 +1,11 @@
-import 'package:first_app/model/password_item.dart';
+import 'package:first_app/hive_db/item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class DetailPasswordPage extends StatefulWidget {
   const DetailPasswordPage({super.key, required this.item});
 
-  final PasswordItem item;
+  final Item item;
 
   @override
   State<DetailPasswordPage> createState() => _DetailPageState();

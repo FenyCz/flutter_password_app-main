@@ -1,9 +1,30 @@
+import 'dart:convert';
+
+import 'package:first_app/hive_db/item.dart';
 import 'package:first_app/pages/home_page.dart';
 import 'package:first_app/service/secure_db_service.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-void main() {
+Future<void> main() async {
   // await dotenv.load(fileName: '.env');
+  await Hive.initFlutter();
+  Hive.registerAdapter(ItemAdapter());
+
+  // TODO use only one secure storage
+  const secureStorage = FlutterSecureStorage();
+  var keyExists = await secureStorage.read(key: 'hiveKey');
+  if (keyExists == null) {
+    final newKey = Hive.generateSecureKey();
+    await secureStorage.write(key: 'hiveKey', value: base64UrlEncode(newKey));
+  }
+  final key = await secureStorage.read(key: 'hiveKey');
+  final encryptionKey = base64Url.decode(key!);
+
+  await Hive.openBox<Item>('itemBox',
+      encryptionCipher: HiveAesCipher(encryptionKey));
+
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
